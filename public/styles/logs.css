@@ -1,0 +1,83 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: #4CAF50; 
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+}
+
+.card-header h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.card-header p {
+    margin: 10px 0 0 0;
+    font-size: 1em;
+}
+
+.log-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-top: 1px solid #f2f2f2;
+    background-color: #fff;
+}
+
+.date-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.date-container span {
+    margin-bottom: 5px; 
+}
+
+.progress-container {
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+
+.progress-bar {
+    height: 20px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #E0E0E0;
+    position: relative;
+    margin-right: 10px;
+}
+
+.logs-container {
+    display: none;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+}
+
+.card.active .logs-container {
+    display: block;
+    max-height: 1000px;
+    transition: max-height 0.3s ease-in;
+}
+

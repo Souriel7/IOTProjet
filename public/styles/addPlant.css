@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.fancy-form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+.input-group-append {
+  margin-left: 10px;
+}
+
+.form-control {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #ff6f61;
+  font-size: 15px;
+}
+
+.btn-secondary {
+  background-color: #4b4a67;
+}
+
+.btn:hover {
+  background-color: #17bea3;
+}
+
+textarea.form-control {
+  height: 120px;
+  resize: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.plant-input {
+  width: 100%;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Fancy style for Plant Photo section */
+.photo-section {
+  /* display: flex; */
+  align-items: center;
+}
+
+.photo-section label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.photo-upload {
+  display: flex;
+  align-items: center;
+}
+
+.photo-upload input[type="file"] {
+  display: none;
+}
+
+.photo-upload label {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff6f61;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.photo-upload label:hover {
+  background-color: #17bea3;
+}
+
+.photo-upload span {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.photo-preview {
+  max-width: 100%;
+  margin-top: 10px;
+  display: none;
+}
+
+.photo-preview img {
+  max-width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

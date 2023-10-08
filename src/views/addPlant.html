@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ajouter une plante</title>
+    <link rel="stylesheet" href="../../public/styles/addPlant.css">
+</head>
+<body>
+
+    <div class="fancy-form">
+        <h1 class="page-title">Ajouter une plante</h1>
+        
+        <form id="plant-form">
+            <div class="form-group">
+                <label for="plant-name">Nom de plante :</label>
+                <input type="text" id="plant-name" class="form-control" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="plant-type">Type de plante :</label>
+                <input type="text" id="plant-type" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="plant-conditions">Conditions :</label>
+                <textarea id="plant-conditions" class="form-control"></textarea>
+            </div>
+    
+            <div class="form-group">
+                <label for="plant-description">Description :</label>
+                <textarea id="plant-description" class="form-control"></textarea>
+            </div>
+    
+            <div class="form-group">
+                <label for="sensor-name">Capteur :</label>
+                <select id="sensor-name" class="form-control">
+                </select>
+            </div>
+    
+            <div class="form-group photo-section">
+                <label for="plant-photo">Photo de plante :</label>
+                <div class="photo-upload">
+                    <label id="upload-label">Télécharger la photo</label>
+                    <input type="file" id="plant-photo" accept="image/*">
+                </div>
+                <div class="photo-preview">
+                    <img id="preview-image" src="#" alt="Plant Photo Preview">
+                </div>
+            </div>
+    
+            <div class="button-group">
+                <button type="submit" class="btn btn-primary">Ajouter</button>
+            </div>
+        </form>
+    </div>
+    
+    <script src="../controllers/addPlantController.js"></script>
+    
+    </body>
+</html>
